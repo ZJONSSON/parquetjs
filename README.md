@@ -270,7 +270,7 @@ encodings:
 </table>
 
 
-Buffering & Row Group Size
+Buffering, PageSize & Row Group Size
 --------------------------
 
 When writing a Parquet file, the `ParquetWriter` will buffer rows in memory
@@ -286,6 +286,16 @@ var writer = await parquet.ParquetWriter.openFile(schema, 'fruits.parquet');
 writer.setRowGroupSize(8192);
 ```
 
+Each column in a rowgroup is also split into pages. The maximum number of rows
+in a page can be defined in as `pageSize` in options or set explicitly like this:
+
+``` js
+var writer = await parquet.ParquetWriter.openFile(schema, 'fruits.parquet');
+writer.setPageSize(500);
+```
+
+Current buffer can be encoded into pages manually by executing `writer.encodePages()`
+Rowgroups can be split manually by executing `writer.writeRowGroup()`
 
 Depdendencies
 -------------
