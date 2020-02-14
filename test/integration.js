@@ -99,6 +99,10 @@ function mkTestRows(opts) {
   return rows;
 }
 
+function sleep(ms = 0) {
+      return new Promise(r => setTimeout(r, ms))
+  }
+
 async function writeTestFile(opts) {
   let schema = mkTestSchema(opts);
 
@@ -113,6 +117,8 @@ async function writeTestFile(opts) {
   }
 
   await writer.close();
+  //TODO - debug why this is needed - seems like something else needs to be awaited
+  sleep(100)
 }
 
 async function writeTestStream(opts) {

@@ -15,6 +15,7 @@ for compatibility with Apache's Java [reference implementation](https://github.c
 write a large amount of structured data to a file, compress it and then read parts
 of it back out efficiently. The Parquet format is based on [Google's Dremel paper](https://www.google.co.nz/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwj_tJelpv3UAhUCm5QKHfJODhUQFggsMAE&url=http%3A%2F%2Fwww.vldb.org%2Fpvldb%2Fvldb2010%2Fpapers%2FR29.pdf&usg=AFQjCNGyMk3_JltVZjMahP6LPmqMzYdCkw).
 
+**How is this version different from parquetjs-lite**: This fork of parquetjs-lite enables the parsing of Parquet files that include 'dataPages' of both dictionary and non-dictionary types
 
 Installation
 ------------
@@ -22,7 +23,7 @@ Installation
 To use parquet.js with node.js, install it using npm:
 
 ```
-  $ npm install parquetjs-lite
+  $ npm install parquetjs-lite-dict
 ```
 
 _parquet.js requires node.js >= 7.6.0_
