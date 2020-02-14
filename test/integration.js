@@ -1,7 +1,6 @@
 'use strict';
 const chai = require('chai');
 const fs = require('fs');
-const os = require('os');
 const assert = chai.assert;
 const parquet = require('../parquet.js');
 const parquet_thrift = require('../gen-nodejs/parquet_types');
