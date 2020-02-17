@@ -2,7 +2,7 @@
   "name": "parquetjs-lite-dict",
   "description": "fully asynchronous, pure JavaScript implementation of the Parquet file format - updated to allow reading dict and non-dict pages in one file",
   "main": "parquet.js",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "homepage": "https://github.com/nregenauer/parquetjs",
   "author": "ironSource <npm@ironsrc.com>",
   "license": "MIT",
