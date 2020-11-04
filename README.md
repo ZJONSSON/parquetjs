@@ -1,4 +1,4 @@
-# parquet.js
+# fast parquet
 
 fully asynchronous, pure node.js implementation of the Parquet file format
 
