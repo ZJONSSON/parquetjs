@@ -105,6 +105,14 @@ columns should be read from disk. For example:
 ``` js
 // create a new cursor that will only return the `name` and `price` columns
 let cursor = reader.getCursor(['name', 'price']);
+
+// select a subset of array/struct columns using an array
+let cursor = reader.getCursor(
+  'name',
+  'price',
+  'array_column',
+  ['array_column', 'list', 'element', 'specific_field']
+);
 ```
 
 It is important that you call close() after you are finished reading the file to
