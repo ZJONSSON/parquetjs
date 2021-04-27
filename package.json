@@ -2,9 +2,8 @@
   "name": "parquetjs",
   "description": "fully asynchronous, pure JavaScript implementation of the Parquet file format",
   "main": "parquet.js",
-  "version": "0.8.0",
-  "homepage": "https://github.com/ironSource/parquetjs",
-  "author": "ironSource <npm@ironsrc.com>",
+  "version": "0.0.0",
+  "homepage": "https://github.com/LibertyDSNP/parquetjs",
   "license": "MIT",
   "keywords": [
     "dremel",
@@ -12,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/ironSource/parquetjs.git"
+    "url": "git://github.com/LibertyDSNP/parquetjs.git"
   },
   "dependencies": {
     "brotli": "^1.3.0",
